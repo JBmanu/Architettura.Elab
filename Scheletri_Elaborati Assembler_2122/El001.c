@@ -17,7 +17,7 @@ void main()
 #define MAX_LEN	100
 
 	// Input
-	char s1[] = "ciao u";
+	char s1[] = "ciao ciao ciak";
 	unsigned int lungS1 = sizeof(s1) - 1;
 	char s2[] = "ciao";
 	unsigned int lungS2 = sizeof(s2) - 1;
@@ -28,6 +28,8 @@ void main()
 	// Blocco assembler
 	__asm
 	{
+		MOV posizioniLen, 0
+		MOV posizioni, 0
 		XOR EAX, EAX   // Indice del Testo
 		XOR ECX, ECX   // Lunghezza del Testo
 		XOR ESI, ESI   // Indice Parola
@@ -51,24 +53,33 @@ CicloTesto:	CMP EAX, ECX
 			JE Uguale
 			// Se sono diversi
 			CMP BL, BH
-			JE Diverso
+			JNE Diverso
 
 			Controllo: INC ESI
 			CMP ESI, EDX
 			JE Azzera
 			Continua: INC EAX
-			
 JMP CicloTesto
 			
-Azzera:		XOR ESI, ESI
-			JMP Continua
+Azzera: CMP EDI, ESI
+		JE Trovato
+		CMP EDI, ESI
+		JNE NTrovato
+		Pulisci: XOR ESI, ESI
+		JMP Continua
 
 Uguale: ADD EDI, 1
 		JMP Controllo
 Diverso: ADD EDI, 0
 		JMP Controllo
 
-		Fine: MOV posizioniLen, EDI
+Trovato: // MOV posizioni[posizioniLen], 1
+		  INC posizioniLen
+		  JMP Pulisci
+NTrovato: XOR EDI, EDI
+		  JMP Pulisci
+
+		Fine: //MOV posizioniLen, EDI
 	}
 
 	// Stampa su video
