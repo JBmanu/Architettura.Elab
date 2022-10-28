@@ -17,9 +17,9 @@ void main()
 #define MAX_LEN	100
 
 	// Input
-	char s1[] = "ciao ciao ciak";
+	char s1[] = "Ciao Cia Cio Ociao ciao Ocio CiCiao CieCiaCiu CiAo eeCCia";
 	unsigned int lungS1 = sizeof(s1) - 1;
-	char s2[] = "ciao";
+	char s2[] = "Cia";
 	unsigned int lungS2 = sizeof(s2) - 1;
 	// Output
 	unsigned int posizioni[MAX_LEN];
@@ -28,66 +28,72 @@ void main()
 	// Blocco assembler
 	__asm
 	{
-		MOV posizioniLen, 0
-		MOV posizioni, 0
-		XOR EAX, EAX   // Indice del Testo
-		XOR ECX, ECX   // Lunghezza del Testo
-		XOR ESI, ESI   // Indice Parola
+		MOV posizioniLen, 0  //Azzero posizione dell'indice
+		XOR EAX, EAX   // Indice Parola
 		XOR EDX, EDX   // Lunghezza della Parola
+
+		XOR ESI, ESI   // Indice del Testo
+		XOR ECX, ECX   // Lunghezza del Testo
+
 		XOR EBX, EBX   // Contenitore dei caratteri BL-Testo e BH-Parola
-		XOR EDI, EDI
+		XOR EDI, EDI   // Indice vettore
 		/////////
 		MOV ECX, lungS1   // lunghezza testo
 		MOV EDX, lungS2   // lunghezza parola
 
+// Ciclo per ogni carattere del testo dato
+CicloTesto:	CMP ESI, ECX  
+			JE Fine      // controllo se ho letto tutti i caratteri del testo e fine algoritmo
 
-
-CicloTesto:	CMP EAX, ECX 
-			JE Fine
-
-			MOV BL, s1[EAX]   // carattere testo
-			MOV BH, s2[ESI]	  // carattere parola
-
-			// Se sono uguali
-			CMP BL, BH 
-			JE Uguale
-			// Se sono diversi
-			CMP BL, BH
-			JNE Diverso
-
-			Controllo: INC ESI
-			CMP ESI, EDX
-			JE Azzera
-			Continua: INC EAX
-JMP CicloTesto
+			MOV BH, s1[ESI]   // carattere del testo  
+			MOV BL, s2[EAX]	  // carattere della parola
 			
-Azzera: CMP EDI, ESI
-		JE Trovato
-		CMP EDI, ESI
-		JNE NTrovato
-		Pulisci: XOR ESI, ESI
-		JMP Continua
+			CMP BH, BL        // Controllo se i caratteri sono uguali
+			JE Uguale
+			CMP BH, BL        // Controllo se i caratteri sono diversi
+			JNE Diversi
+			
+	Controllo:	CMP EAX, EDX   // Controllo se ho trovato tutte le parola nel testo
+				JE Azzera
 
-Uguale: ADD EDI, 1
-		JMP Controllo
-Diverso: ADD EDI, 0
-		JMP Controllo
+	Continua:	INC ESI
+JMP CicloTesto
 
-Trovato: // MOV posizioni[posizioniLen], 1
-		  INC posizioniLen
-		  JMP Pulisci
-NTrovato: XOR EDI, EDI
-		  JMP Pulisci
+// Caratteri uguali incremento l'indice della parola per il nuovo carattere
+Uguale:	INC EAX  
+JMP Controllo
 
-		Fine: //MOV posizioniLen, EDI
+// Caratteri diversi pulisco l'area di memoria dell'indice 
+Diversi:	CALL PulisciEAX
+JMP Controllo
+
+// Pulisco l'area di memoria e salvo l'indice della parola completa trovata nel testo
+Azzera: CALL Indice
+		MOV posizioni[4 * EDI], EAX
+		INC EDI
+		INC posizioniLen
+		CALL PulisciEAX
+JMP Continua
+
+// Ricerca dell'indice della parola trovata tramite sottrazione
+Indice:	CALL PulisciEAX
+		MOV EAX, ESI
+		INC EAX	
+		SUB EAX, EDX
+RET
+
+// Azzera l'area di memoria EAX
+PulisciEAX: XOR EAX, EAX
+RET
+
+// Fine algoritmo
+Fine:
 	}
 
 	// Stampa su video
 	{
-		printf("Sottostringa in posizione=%d\n", posizioniLen);
-
-		/*unsigned int i;
+		unsigned int i;
 		for (i = 0; i < posizioniLen; i++)
-			printf("Sottostringa in posizione=%d\n", posizioni[i]);*/
+			printf("Sottostringa in posizione=%d\n", posizioni[i]);
 	}
 }
