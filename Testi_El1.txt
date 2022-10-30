@@ -1,0 +1,4 @@
+char s1[] = "Sette scettici sceicchi sciocchi con la sciatica a Shanghai";
+char s1[] = "Ciao Cia Cio Ociao ciao Ocio CiCiao CieCiaCiu CiAo eeCCia";
+char s2[] = "icchi";
+char s2[] = "Cia";
