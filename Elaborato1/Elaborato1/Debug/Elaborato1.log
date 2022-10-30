@@ -1,2 +1,7 @@
-﻿  El001.c
-  Elaborato1.vcxproj -> C:\Users\buizo\Desktop\Architettura.Elab\Elaborato1\Debug\Elaborato1.exe
+﻿  El002.c
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(702,5): error MSB6006: "CL.exe" exited with code 2.
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El002.c(43,1): error C2414: illegal number of operands
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El002.c(43,1): error C2400: inline assembler syntax error in 'first operand'; found ':'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El002.c(44,1): error C2400: inline assembler syntax error in 'opcode'; found ':'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El002.c(44): warning C4405: 'JE': identifier is reserved word
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El002.c(58): warning C4405: 'Loop': identifier is reserved word
