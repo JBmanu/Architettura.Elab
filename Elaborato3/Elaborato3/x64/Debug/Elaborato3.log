@@ -1,0 +1,55 @@
+﻿  El003.c
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(22,2): error C4235: nonstandard extension used: '__asm' keyword not supported on this architecture
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(24,7): error C2065: 'MOV': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(24,7): error C2146: syntax error: missing ';' before identifier 'numSequenzaZero'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(25,3): error C2146: syntax error: missing ';' before identifier 'MOV'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(25,7): error C2065: 'MOV': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(25,7): error C2146: syntax error: missing ';' before identifier 'numSequenzaUno'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(26,3): error C2146: syntax error: missing ';' before identifier 'XOR'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(26,7): error C2065: 'XOR': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(26,7): error C2146: syntax error: missing ';' before identifier 'EAX'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(26,10): error C2065: 'EAX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(27,3): error C2065: 'EAX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(27,3): error C2146: syntax error: missing ';' before identifier 'XOR'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(27,7): error C2065: 'XOR': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(27,7): error C2146: syntax error: missing ';' before identifier 'EBX'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(27,10): error C2065: 'EBX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(28,3): error C2065: 'EBX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(28,3): error C2146: syntax error: missing ';' before identifier 'XOR'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(28,7): error C2065: 'XOR': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(28,7): error C2146: syntax error: missing ';' before identifier 'ECX'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(28,10): error C2065: 'ECX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(29,3): error C2065: 'ECX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(29,3): error C2146: syntax error: missing ';' before identifier 'XOR'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(29,7): error C2065: 'XOR': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(29,7): error C2146: syntax error: missing ';' before identifier 'EDX'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(29,10): error C2065: 'EDX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(30,3): error C2065: 'EDX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(30,3): error C2146: syntax error: missing ';' before identifier 'XOR'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(30,7): error C2065: 'XOR': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(30,7): error C2146: syntax error: missing ';' before identifier 'EDI'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(30,10): error C2065: 'EDI': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(31,3): error C2065: 'EDI': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(31,3): error C2146: syntax error: missing ';' before identifier 'XOR'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(31,7): error C2065: 'XOR': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(31,7): error C2146: syntax error: missing ';' before identifier 'ESI'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(31,10): error C2065: 'ESI': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(35,2): error C2065: 'ESI': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(35,2): error C2146: syntax error: missing ';' before identifier 'CicloBit'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(35,16): error C2065: 'CMP': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(35,16): error C2146: syntax error: missing ';' before identifier 'ECX'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(35,19): error C2065: 'ECX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(36,5): error C2146: syntax error: missing ';' before identifier 'JE'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(36,8): error C2065: 'JE': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(36,8): error C2146: syntax error: missing ';' before identifier 'FineBit'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(39,4): error C2065: 'FineBit': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(39,4): error C2146: syntax error: missing ';' before identifier 'INC'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(39,8): error C2065: 'INC': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(39,8): error C2146: syntax error: missing ';' before identifier 'ECX'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(40,2): error C2065: 'ECX': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(40,2): error C2146: syntax error: missing ';' before identifier 'JMP'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(40,6): error C2065: 'JMP': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(40,6): error C2146: syntax error: missing ';' before identifier 'CicloBit'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(42,2): error C2065: 'CicloBit': undeclared identifier
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(42,2): error C2146: syntax error: missing ';' before identifier 'FineBit'
+C:\Users\pixwa\Desktop\Architettura.Elab\Scheletri_Elaborati Assembler_2122\El003.c(44,2): error C2143: syntax error: missing ';' before '}'
